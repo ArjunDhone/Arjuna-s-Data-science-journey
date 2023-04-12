@@ -1,0 +1,89 @@
+1.What are the two values of the Boolean data type? How do you write them?
+Ans: The two values of boolean data type are True and false , and it can be written with a bool()
+
+2. What are the three different types of Boolean operators?
+ Ans : and ,or, XOR
+
+3. Make a list of each Boolean operator&#39;s truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+Ans: 
+
+4. What are the values of the following expressions?
+(5 &gt; 4) and (3 == 5)
+false ,as in and any one is false then false and 3!=5
+
+not (5 &gt; 4)
+false as 5>4 is true nut not makes it false.
+
+(5 &gt; 4) or (3 == 5)
+True , any one is true then statement is true in or statement.
+
+not ((5 &gt; 4) or (3 == 5))
+false as the statement is true but due to not it becames false.
+
+(True and True) and (True == False)
+false
+(not False) or (not True)
+true
+
+5. What are the six comparison operators?
+Ans : ==,!=,<=,>=,<,>
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a
+condition and when you would use one.
+Ans : Equal to :- it is the operator where we check condition where as assignment operator assigns value to the variable.
+      for eg if we want to compare password == password then we use equal to operator
+             if we want to assign value first time user and want to store some value in password variable then we store password=ineuron.
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print(&#39;eggs&#39;)
+if spam &gt; 5:
+print(&#39;bacon&#39;)
+else:
+print(&#39;ham&#39;)
+print(&#39;spam&#39;)
+print(&#39;spam&#39;)
+
+ans : Spam is asssigned to 0, so it will only print else. 
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+
+Ans:
+spam=int(input("Enter 1or 2 or 3"))
+if spam=1:
+   print("Hello")
+if spam=2:
+   print("Howdy")
+if spam=3:
+   print("Greetings!")
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+Ans:when the 'q' key is pressed, the program ends.
+Other keys can be pressed (b' or 'k') as change a variable value or execute a function.
+
+
+10. How can you tell the difference between break and continue?
+
+ans : break: break will remove the iteration and continue will skip that specific iteration and continue with the next iteration.
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+Ans:  There is no difference between range (10), range (0,10) and range (0,10,1)
+for loop range(10) it will print for range 0 -10 excluding 10
+     for loop range(0,10) it will print for range 0 -10 excluding 10
+     for loop range(10) it will print for range 0 -10 excluding 10 and with 1 increasing
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+Answer :-     for i in range(1,11):
+                  print(i)
+              while i<11:
+                  print(i)
+                 
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+Ans :If we have bacon() funtion in spam module then first we need to import the module and then we need to import the funtion too. from spam import bacon This above code is used to import funtions from given module. And then we can use the imported funtion for our own utilities.
