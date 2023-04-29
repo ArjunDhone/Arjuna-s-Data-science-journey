@@ -1,0 +1,93 @@
+1. What are escape characters, and how do you use them?
+Ans:
+Escape characters allows a programmer to include special characters in the strings. To do this, simply a backslash is needed before the character that is going to be escaped.
+
+Example:
+
+\t = Include tab inside strings
+
+\n = Include new line inside strings
+
+2. What do the escape characters n and t stand for?
+Ans:
+escape character \n stands for new line
+
+escape character \t stands for new tab or inserts four spaces
+
+3. What is the way to include backslash characters in a string?
+Ans:
+we have to insert double backslashes to include a single backslash in the string
+
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the word Howl's not escaped a problem?
+Ans:
+we can print single quotes inside double quoted strings
+
+we can also print double quotes inside single quoted strings
+
+5. How do you write a string of newlines if you don't want to use the n character?
+Ans:
+multiline string allows us to use newlines without using the \n character.
+
+a = '''this is the first line
+this is the second line
+this is the third line'''
+print(a)
+this is the first line
+this is the second line
+this is the third line
+6. What are the values of the given expressions?
+'Hello, world!'[1]
+
+'Hello, world!'[0:5]
+
+'Hello, world!'[:5]
+
+'Hello, world!'[3:]
+Ans:
+these are operations of indexing and slicing of string 'Hello, world!' :-
+
+'Hello, world!'[1] = 'e'
+'Hello, world!'[0:5] = 'Hello'
+'Hello, world!'[:5] = 'Hello'
+'Hello, world!'[3:] = 'lo, world!'
+
+7. What are the values of the following expressions?
+'Hello'.upper()
+
+'Hello'.upper().isupper()
+
+'Hello'.upper().lower()
+Ans:
+'Hello'.upper() = 'HELLO'
+all the characters in the string will convert in uppercase
+
+'Hello'.upper().isupper() = True
+all the characters in the string will convert in uppercase then check whether all the characters are uppercase or not
+
+'Hello'.upper().lower() = 'hello'
+all the characters in the string will convert in uppercase then convert all of them into lowercase
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+
+'-'.join('There can only one.'.split())
+
+Ans:
+'Remember, remember, the fifth of July.'.split()
+
+here the string will be splited based on empty spaces and return a list:
+['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+'-'.join('There can only one.'.split())
+
+here first the string will be splitted into a list of words based on empty spaces, then the elements of the list will be joined with '-' instead of space and turn into a string again and return
+
+'There-can-only-one.'
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+Ans:
+method ljust() is used for left-justifying a string
+method rjust() is used for right-justifying a string
+method center() is used for centering a string
+10. What is the best way to remove whitespace characters from the start or end?
+Ans:
+strip() is the method to removed whitespace characters from the start or end of a string
+though by default the method removes whitespace characters but any character can be removed similarly if passed in the method arguement
